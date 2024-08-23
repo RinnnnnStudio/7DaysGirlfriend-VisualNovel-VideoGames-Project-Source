@@ -1,0 +1,295 @@
+[
+    {
+        "typeID": 2,
+        "name": "指令-消息",
+        "classID": 0,
+        "data": [
+            [
+                30001,
+                "发送消息",
+                false
+            ],
+            [
+                3,
+                "[#GAME_DISPLAY_OPTIONS]"
+            ],
+            [
+                30002,
+                "发送图片",
+                false
+            ],
+            [
+                30003,
+                "发送动画",
+                false
+            ],
+            [
+                30004,
+                "发送语音消息",
+                false
+            ],
+            [
+                30005,
+                "发送系统消息",
+                false
+            ],
+            [
+                30009,
+                "清理消息",
+                true
+            ],
+            [
+                30010,
+                "更换背景",
+                false
+            ],
+            [
+                30011,
+                "更换标题",
+                false
+            ],
+            [
+                18,
+                "[#GAME_ANNOTATION]"
+            ],
+            [
+                10002,
+                "等待玩家输入文本",
+                false
+            ]
+        ],
+        "tips": "指令",
+        "insert": false,
+        "jsCode": "var PLUGIN_CUSTOM_COMMAND_showPicture = 3001;\nAssetManager.loadImage(value, Callback.New(function (tex) {\n    if (tex) {\n        var passageID = 1;\n        for (var i = 1; i < 9999; i++) {\n            if (!imageLayerPassageData[i]) {\n                passageID = i;\n                break;\n            }\n        }\n        previewWin.insertCustomCMD(PLUGIN_CUSTOM_COMMAND_showPicture, {\n            image: value,\n            passageID: passageID,\n            dpWidth: tex.width,\n            dpHeight: tex.height,\n            dpX: Math.floor(inImageLayerX - tex.width / 2),\n            dpY: Math.floor(inImageLayerY - tex.height / 2)\n        }, -3, true);\n        previewWin.changeLayer(1);\n    }\n}, this));\n",
+        "tsCode": "/**\n * 图像层通道数据\n */\ndeclare var imageLayerPassageData: any[];\n/**\n * 小类别 0-无 1-图片 2-音频 3-界面 4-视频 5-动画 6-自定义格式文件 7-立绘 \n */\ndeclare var classID: number;\n/**\n * 值 \n * 图片/音频/自定义格式文件 = 路径:string;\n * 界面/动画/立绘 = 编号:number;\n */\ndeclare var value: any;\n/**\n * 拖拽至图像层的坐标\n */\ndeclare var inImageLayerX: number;\ndeclare var inImageLayerY: number;\n/**\n * 预览窗口\n */\ndeclare var previewWin: {\n    /**\n     * 新增指令 默认是默认值，如果有写入参数的话则以参数为准 varNameValue\n     * @param customID 自定义ID\n     * @param varNameValue 额外的变量值，如存在则优先使用该值，否则使用自定义编辑器中的默认值，如 {dpX:100,dpY:200}\n     * @param selectedIndex [可选] 默认值=-2  -3=当前选中（之后） -2=当前选中（之前） -1=最尾端 0-N=自定义 \n     * @param refreshPreViewArea [可选] 默认值=true 刷新预览区\n     */\n    insertCustomCMD(customID: number, varNameValue: any, selectedIndex?: number, refreshPreViewArea?: boolean): Command;\n    /**\n     * 更改显示层\n     * @param selectedIndex 0-界面层 1-图像层\n     */\n    changeLayer(selectedIndex: number): void;\n}\n//------------------------------------------------------------------------------------------------------\n// 编写资源对应的插入指令逻辑\n//------------------------------------------------------------------------------------------------------\n// 对应的指令\nvar PLUGIN_CUSTOM_COMMAND_showPicture: number = 3001;\n// 加载贴图，存在的话则以该贴图原始尺寸插入对应的指令\nAssetManager.loadImage(value, Callback.New((tex: Texture) => {\n    if (tex) {\n        // 获取空的通道\n        var passageID = 1;\n        for (var i = 1; i < 9999; i++) {\n            if (!imageLayerPassageData[i]) {\n                passageID = i;\n                break;\n            }\n        }\n        // 插入代码\n        previewWin.insertCustomCMD(PLUGIN_CUSTOM_COMMAND_showPicture, {\n            image: value,\n            passageID: passageID,\n            dpWidth: tex.width,\n            dpHeight: tex.height,\n            dpX: Math.floor(inImageLayerX - tex.width / 2),\n            dpY: Math.floor(inImageLayerY - tex.height / 2)\n        }, -3, true);\n        // 切换为图像层\n        previewWin.changeLayer(1);\n    }\n}, this));"
+    },
+    {
+        "typeID": 2,
+        "name": "指令-游戏进程",
+        "classID": -1,
+        "data": [
+            [
+                13,
+                "数值变量设值",
+                false,
+                3
+            ],
+            [
+                13,
+                "开关设置",
+                false,
+                4
+            ],
+            [
+                13,
+                "字符串设值",
+                false,
+                5
+            ],
+            [
+                13,
+                "二周目数值设值",
+                false,
+                0
+            ],
+            [
+                13,
+                "二周目开关设置",
+                false,
+                1
+            ],
+            [
+                13,
+                "二周目字符串设值",
+                false,
+                2
+            ],
+            [
+                10007,
+                "获得鉴赏图片",
+                false
+            ],
+            [
+                10008,
+                "获得鉴赏音乐",
+                false
+            ]
+        ],
+        "tips": "指令",
+        "insert": false,
+        "jsCode": "",
+        "tsCode": ""
+    },
+    {
+        "typeID": 2,
+        "name": "指令-事件",
+        "classID": -1,
+        "data": [
+            [
+                10003,
+                "按键事件",
+                false
+            ],
+            [
+                10004,
+                "鼠标事件",
+                false
+            ],
+            [
+                10005,
+                "取消按键事件",
+                false
+            ],
+            [
+                10006,
+                "取消鼠标事件",
+                false
+            ],
+            [
+                16,
+                "[#GAME_CALL_EVENT_LIBRARY]"
+            ],
+            [
+                15,
+                "[#GAME_EVENT_PAGE_FRAGMENT]"
+            ]
+        ],
+        "tips": "指令",
+        "insert": false,
+        "jsCode": "",
+        "tsCode": ""
+    },
+    {
+        "typeID": 2,
+        "name": "指令-界面",
+        "classID": -1,
+        "data": [
+            [
+                40010,
+                "显示界面",
+                false
+            ],
+            [
+                40011,
+                "移动界面",
+                false
+            ],
+            [
+                40012,
+                "关闭界面",
+                false
+            ],
+            [
+                40020,
+                "等待关闭界面",
+                false
+            ],
+            [
+                40013,
+                "移动界面内的元件",
+                false
+            ]
+        ],
+        "tips": "指令",
+        "insert": false,
+        "jsCode": "",
+        "tsCode": ""
+    },
+    {
+        "typeID": 2,
+        "name": "指令-音频",
+        "classID": -1,
+        "data": [
+            [
+                60001,
+                "播放背景音乐",
+                false
+            ],
+            [
+                60002,
+                "停止背景音乐",
+                false
+            ],
+            [
+                60003,
+                "播放环境声效",
+                false
+            ],
+            [
+                60004,
+                "停止环境声效",
+                false
+            ],
+            [
+                60005,
+                "播放音效",
+                false
+            ],
+            [
+                60006,
+                "停止音效",
+                true
+            ],
+            [
+                60007,
+                "播放语音",
+                false
+            ],
+            [
+                60008,
+                "停止语音",
+                true
+            ]
+        ],
+        "tips": "指令",
+        "insert": false,
+        "jsCode": "",
+        "tsCode": ""
+    },
+    {
+        "typeID": 2,
+        "name": "指令-系统",
+        "classID": -1,
+        "data": [
+            [
+                10001,
+                "预加载资源",
+                false
+            ],
+            [
+                50001,
+                "全屏设置",
+                false
+            ],
+            [
+                50006,
+                "存档",
+                false
+            ],
+            [
+                50005,
+                "开始游戏",
+                true
+            ],
+            [
+                50008,
+                "返回标题界面",
+                true
+            ],
+            [
+                50011,
+                "关闭游戏窗口",
+                true
+            ],
+            [
+                50012,
+                "设置世界属性",
+                false
+            ]
+        ],
+        "tips": "指令",
+        "insert": false,
+        "jsCode": "",
+        "tsCode": ""
+    }
+]

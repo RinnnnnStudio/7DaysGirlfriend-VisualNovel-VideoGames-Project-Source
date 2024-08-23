@@ -1,0 +1,39 @@
+[
+    {
+        "name": "图片",
+        "features": 0,
+        "defaultDes": "",
+        "maxHeight": 512,
+        "minHeight": 64,
+        "maxWidth": 512,
+        "minWidth": 64,
+        "allowDel": false,
+        "saveInfo": "图像将存储至${url}"
+    },
+    {
+        "name": "角色",
+        "features": 0,
+        "defaultDes": "{best quality}, {{masterpiece}}, {highres}, {an extremely delicate and beautiful}, original, extremely detailed wallpaper,face",
+        "maxHeight": 512,
+        "minHeight": 64,
+        "maxWidth": 512,
+        "minWidth": 64,
+        "allowDel": false,
+        "saveInfo": "图像将存储至${url}",
+        "extendTs": "\n//------------------------------------------------------------------------------------------------------\n// AI生成图像后编辑器扩展\n//------------------------------------------------------------------------------------------------------\ndeclare var editor: Editor;\n/**\n * 使用的场合：0-场景 1-事件页预览 2-界面编辑器\n * @param image 图像地址\n */\ndeclare var useType: number;\n/**\n * 当生成图像时\n * @param image 图像地址\n * @param tex 图像\n * @return {image: string, tex: Texture}\n */\nfunction onCreateImage(image: string, tex: Texture): {image: string, tex: Texture} {\n    return {image: image, tex: tex};\n}\n/**\n * 当保留图像时\n * @param image 图像地址\n */\nfunction onReserveImage(image: string) {\n    let id = editor.module.getEmptyID(2);\n    editor.module.createModuleData(2,\"unnamed-\"+id,{face:image,intro:\"小柯造图生成角色！\"})\n}\n/**\n * 当丢弃图像前\n * @param image 图像地址\n */\nfunction onDiscardImage(image: string): void {\n\n}\n        ",
+        "extendJs": "function onCreateImage(image, tex) {\n    return { image: image, tex: tex };\n}\nfunction onReserveImage(image) {\n    var id = editor.module.getEmptyID(2);\n    editor.module.createModuleData(2, \"unnamed-\" + id, { face: image, intro: \"小柯造图生成角色！\" });\n}\nfunction onDiscardImage(image) {\n}\n"
+    },
+    {
+        "name": "背景",
+        "features": 0,
+        "defaultDes": "{best quality}, {{masterpiece}}, {highres}, {an extremely delicate and beautiful}, original, extremely detailed wallpaper,Landscape Map",
+        "maxHeight": 1080,
+        "minHeight": 64,
+        "maxWidth": 540,
+        "minWidth": 64,
+        "allowDel": false,
+        "saveInfo": "图像将存储至${url}",
+        "extendTs": "\n//------------------------------------------------------------------------------------------------------\n// AI生成图像后编辑器扩展\n//------------------------------------------------------------------------------------------------------\ndeclare var editor: Editor;\n/**\n * 使用的场合：0-场景 1-事件页预览 2-界面编辑器\n * @param image 图像地址\n */\ndeclare var useType: number;\n/**\n * 当生成图像时\n * @param image 图像地址\n * @param tex 图像\n * @return {image: string, tex: Texture}\n */\nfunction onCreateImage(image: string, tex: Texture): {image: string, tex: Texture} {\n    let name = image.split(\"/\").pop();\n    image = \"asset/image/picture/background/\" + name;\n    return {image: image, tex: tex};\n}\n/**\n * 当保留图像时\n * @param image 图像地址\n */\nfunction onReserveImage(image: string): void {\n\n}\n/**\n * 当丢弃图像前\n * @param image 图像地址\n */\nfunction onDiscardImage(image: string): void {\n\n}\n",
+        "extendJs": "function onCreateImage(image, tex) {\n    var name = image.split(\"/\").pop();\n    image = \"asset/image/picture/background/\" + name;\n    return { image: image, tex: tex };\n}\nfunction onReserveImage(image) {\n}\nfunction onDiscardImage(image) {\n}\n"
+    }
+]
