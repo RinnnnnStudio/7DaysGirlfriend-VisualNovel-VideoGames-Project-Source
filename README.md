@@ -1,1 +1,1 @@
-Steam:7 days girlfriends.
+7 days girlfriend
