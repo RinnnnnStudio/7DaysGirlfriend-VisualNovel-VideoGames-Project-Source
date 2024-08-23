@@ -1,0 +1,43 @@
+{
+    "list": {
+        "1": [
+            null,
+            "房间",
+            "室外",
+            "门厅",
+            "家中",
+            "卫生间"
+        ]
+    },
+    "type": {
+        "1": "CG"
+    },
+    "typeTreeNode": {
+        "isDirectory": true,
+        "children": [
+            {
+                "id": 1,
+                "name": "房间",
+                "children": []
+            },
+            {
+                "id": 2,
+                "name": "室外",
+                "children": []
+            },
+            {
+                "id": 3,
+                "name": "门厅",
+                "children": []
+            },
+            {
+                "id": 4,
+                "name": "家中",
+                "children": []
+            }
+        ],
+        "isOpen": true,
+        "name": "CG鉴赏"
+    },
+    "dataShowMode": 0
+}

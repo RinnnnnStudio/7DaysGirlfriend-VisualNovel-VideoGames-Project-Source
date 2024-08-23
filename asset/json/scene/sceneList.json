@@ -1,0 +1,41 @@
+{
+    "list": [
+        null,
+        "7DGF",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "node": [
+        {
+            "id": 1,
+            "name": "7DGF",
+            "children": [],
+            "isOpen": true
+        }
+    ]
+}

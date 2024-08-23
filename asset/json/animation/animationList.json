@@ -1,0 +1,38 @@
+{
+    "list": {
+        "1": [
+            null,
+            "加载动画",
+            "跳过标志",
+            "语音标志"
+        ]
+    },
+    "type": {
+        "1": "系统",
+        "16": "插件"
+    },
+    "typeTreeNode": {
+        "isDirectory": true,
+        "children": [
+            {
+                "id": 1,
+                "name": "加载动画",
+                "children": [],
+                "isOpen": true
+            },
+            {
+                "id": 2,
+                "name": "跳过标志",
+                "children": []
+            },
+            {
+                "id": 3,
+                "name": "语音标志",
+                "children": []
+            }
+        ],
+        "isOpen": true,
+        "name": "[#GAME_ANIMATION]"
+    },
+    "dataShowMode": 0
+}

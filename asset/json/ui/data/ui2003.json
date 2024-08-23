@@ -1,0 +1,108 @@
+{
+    "root": {
+        "children": [
+            {
+                "id": "127255938376_0.4253273732439349",
+                "condition": [],
+                "type": "UIRoot",
+                "name": "背景裁切容器",
+                "x": 0,
+                "y": 0,
+                "width": 540,
+                "height": 1080,
+                "opacity": 1,
+                "rotation": 0,
+                "show": true,
+                "mouseEventEnabledData": true,
+                "materialData": [
+                    {
+                        "materials": []
+                    }
+                ],
+                "mouseEventEnabledInEditor": true,
+                "lock": false,
+                "showOnEditor": true,
+                "hasCommand": [],
+                "isOpen": false,
+                "enabledLimitView": true,
+                "scrollShowType": 0,
+                "hScrollBar": "asset/image/picture/control/hscroll_bar.png",
+                "hScrollBg": "asset/image/picture/control/hscroll_bg.png",
+                "vScrollBar": "asset/image/picture/control/vscroll_bar.png",
+                "vScrollBg": "asset/image/picture/control/vscroll_bg.png",
+                "scrollWidth": 16,
+                "slowmotionType": 0,
+                "enabledWheel": false,
+                "hScrollValue": 0,
+                "vScrollValue": 0,
+                "children": [
+                    {
+                        "id": "127255938377_0.40542671381908146",
+                        "condition": [],
+                        "type": "UIBitmap",
+                        "name": "界面背景",
+                        "x": -18,
+                        "y": -6,
+                        "width": 574,
+                        "height": 1087,
+                        "opacity": 1,
+                        "rotation": 0,
+                        "show": true,
+                        "mouseEventEnabledData": true,
+                        "materialData": [
+                            {
+                                "materials": []
+                            }
+                        ],
+                        "mouseEventEnabledInEditor": true,
+                        "lock": false,
+                        "showOnEditor": true,
+                        "hasCommand": [],
+                        "isOpen": true,
+                        "image": "asset/image/picture/background/background.png",
+                        "grid9": "0,0,0,0,0",
+                        "flip": null,
+                        "isTile": null,
+                        "pivotType": 0
+                    }
+                ]
+            },
+            {
+                "id": "126068005897_0.2611099567691917",
+                "condition": [],
+                "type": "UIAnimation",
+                "name": "加载动画",
+                "x": 500,
+                "y": 1040,
+                "width": 192,
+                "height": 192,
+                "opacity": 1,
+                "rotation": 0,
+                "show": true,
+                "mouseEventEnabledData": true,
+                "materialData": [
+                    {
+                        "materials": []
+                    }
+                ],
+                "mouseEventEnabledInEditor": true,
+                "lock": false,
+                "showOnEditor": true,
+                "hasCommand": [],
+                "isOpen": true,
+                "animationID": 1,
+                "scaleNumberX": 1,
+                "scaleNumberY": 1,
+                "aniFrame": 1,
+                "playFps": 20,
+                "playType": 2,
+                "showHitEffect": true,
+                "silentMode": false
+            }
+        ]
+    },
+    "id": 2003,
+    "instanceClassName": "",
+    "hasRootCommand": [],
+    "lock": true
+}

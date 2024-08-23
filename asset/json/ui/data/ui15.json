@@ -1,0 +1,107 @@
+{
+    "root": {
+        "children": [
+            {
+                "id": "86845273372_0.019668939103383742",
+                "condition": [],
+                "type": "UIRoot",
+                "name": "溢出隐藏容器",
+                "x": 0,
+                "y": 0,
+                "width": 540,
+                "height": 1080,
+                "opacity": 1,
+                "blend": 0,
+                "rotation": 0,
+                "show": true,
+                "mouseEventEnabledData": true,
+                "materialData": [
+                    {
+                        "materials": []
+                    }
+                ],
+                "mouseEventEnabledInEditor": true,
+                "lock": false,
+                "showOnEditor": true,
+                "hasCommand": [],
+                "isOpen": true,
+                "enabledLimitView": true,
+                "scrollShowType": 0,
+                "hScrollBar": "asset/image/picture/control/hscroll_bar.png",
+                "hScrollBg": "asset/image/picture/control/hscroll_bg.png",
+                "vScrollBar": "asset/image/picture/control/vscroll_bar.png",
+                "vScrollBg": "asset/image/picture/control/vscroll_bg.png",
+                "scrollWidth": 16,
+                "slowmotionType": 2,
+                "enabledWheel": false,
+                "hScrollValue": 0,
+                "vScrollValue": 0,
+                "children": [
+                    {
+                        "id": "127255866080_0.3897719571385603",
+                        "condition": [],
+                        "type": "UIBitmap",
+                        "name": "界面背景",
+                        "x": 0,
+                        "y": 0,
+                        "width": 540,
+                        "height": 1080,
+                        "opacity": 1,
+                        "blend": 0,
+                        "rotation": 0,
+                        "show": true,
+                        "mouseEventEnabledData": true,
+                        "materialData": [
+                            {
+                                "materials": []
+                            }
+                        ],
+                        "mouseEventEnabledInEditor": true,
+                        "lock": false,
+                        "showOnEditor": true,
+                        "hasCommand": [],
+                        "isOpen": true,
+                        "image": "asset/image/picture/titles/titles.png",
+                        "grid9": "0,0,0,0,0",
+                        "flip": null,
+                        "isTile": null,
+                        "pivotType": 0
+                    },
+                    {
+                        "id": "86845244630_0.4224582139424089",
+                        "condition": [],
+                        "type": "UIBitmap",
+                        "name": "黑色底色",
+                        "x": 0,
+                        "y": 0,
+                        "width": 540,
+                        "height": 1080,
+                        "opacity": 0.75,
+                        "blend": 0,
+                        "rotation": 0,
+                        "show": true,
+                        "mouseEventEnabledData": true,
+                        "materialData": [
+                            {
+                                "materials": []
+                            }
+                        ],
+                        "mouseEventEnabledInEditor": true,
+                        "lock": false,
+                        "showOnEditor": true,
+                        "hasCommand": [],
+                        "isOpen": true,
+                        "image": "asset/image/picture/other/Black.png",
+                        "grid9": "5,5,5,5,0",
+                        "flip": null,
+                        "isTile": false,
+                        "pivotType": 0
+                    }
+                ]
+            }
+        ]
+    },
+    "id": 15,
+    "instanceClassName": "",
+    "hasRootCommand": []
+}

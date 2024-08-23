@@ -1,0 +1,15 @@
+{
+    "attrs": {
+        "face": {
+            "varType": 1,
+            "value": "asset/image/picture/characters/XiaXin.png",
+            "copy": false
+        },
+        "intro": {
+            "varType": 1,
+            "value": "由Rinnnnn Studio开发的人工智能机器人，会根据使用者的内心发生相对应的改变。",
+            "copy": false
+        }
+    },
+    "id": 1
+}

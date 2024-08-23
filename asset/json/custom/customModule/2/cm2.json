@@ -1,0 +1,15 @@
+{
+    "attrs": {
+        "face": {
+            "varType": 1,
+            "value": "asset/image/picture/characters/YuYan.png",
+            "copy": false
+        },
+        "intro": {
+            "varType": 1,
+            "value": "你，还是你？",
+            "copy": false
+        }
+    },
+    "id": 2
+}

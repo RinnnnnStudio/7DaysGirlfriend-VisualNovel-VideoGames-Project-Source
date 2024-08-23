@@ -1,0 +1,103 @@
+{
+    "root": {
+        "children": [
+            {
+                "id": "130203862005_0.9639644931613578",
+                "condition": [],
+                "type": "UIBitmap",
+                "name": "背景",
+                "x": 0,
+                "y": 0,
+                "width": 500,
+                "height": 600,
+                "opacity": 1,
+                "rotation": 0,
+                "show": true,
+                "mouseEventEnabledData": true,
+                "materialData": [
+                    {
+                        "materials": []
+                    }
+                ],
+                "mouseEventEnabledInEditor": true,
+                "lock": false,
+                "showOnEditor": true,
+                "hasCommand": [],
+                "isOpen": true,
+                "image": "asset/image/picture/control/uicombobox.png",
+                "grid9": "20,20,20,20,0",
+                "pivotType": 0
+            },
+            {
+                "id": "130203767708_0.03990631046066073",
+                "condition": [],
+                "type": "UIRoot",
+                "name": "裁剪容器",
+                "x": 2,
+                "y": 2,
+                "width": 496,
+                "height": 596,
+                "opacity": 1,
+                "rotation": 0,
+                "show": true,
+                "mouseEventEnabledData": true,
+                "materialData": [
+                    {
+                        "materials": []
+                    }
+                ],
+                "mouseEventEnabledInEditor": true,
+                "lock": false,
+                "showOnEditor": true,
+                "hasCommand": [],
+                "isOpen": true,
+                "enabledLimitView": true,
+                "scrollShowType": 0,
+                "hScrollBar": "asset/image/picture/control/hscroll_bar.png",
+                "hScrollBg": "asset/image/picture/control/hscroll_bg.png",
+                "vScrollBar": "asset/image/picture/control/vscroll_bar.png",
+                "vScrollBg": "asset/image/picture/control/vscroll_bg.png",
+                "scrollWidth": 16,
+                "slowmotionType": 2,
+                "enabledWheel": false,
+                "hScrollValue": 0,
+                "vScrollValue": 0,
+                "children": [
+                    {
+                        "id": "51050742446_0.6127957094513128",
+                        "condition": [],
+                        "type": "UIBitmap",
+                        "name": "cg",
+                        "x": 0,
+                        "y": -200,
+                        "width": 500,
+                        "height": 1000,
+                        "opacity": 1,
+                        "rotation": 0,
+                        "show": true,
+                        "mouseEventEnabledData": true,
+                        "materialData": [
+                            {
+                                "materials": []
+                            }
+                        ],
+                        "mouseEventEnabledInEditor": true,
+                        "lock": true,
+                        "showOnEditor": true,
+                        "hasCommand": [],
+                        "isOpen": true,
+                        "image": "",
+                        "grid9": "0,0,0,0,0",
+                        "flip": null,
+                        "isTile": null,
+                        "pivotType": 0
+                    }
+                ]
+            }
+        ]
+    },
+    "id": 1003,
+    "instanceClassName": "",
+    "hasRootCommand": [],
+    "lock": true
+}

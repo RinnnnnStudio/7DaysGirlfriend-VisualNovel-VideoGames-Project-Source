@@ -1,0 +1,13 @@
+{
+    "attrs": {
+        "CGs": {
+            "varType": 7,
+            "value": [
+                "asset/image/picture/background/Behind the door.png",
+                "asset/image/picture/background/Behind the door-Night.png"
+            ],
+            "copy": false
+        }
+    },
+    "id": 3
+}

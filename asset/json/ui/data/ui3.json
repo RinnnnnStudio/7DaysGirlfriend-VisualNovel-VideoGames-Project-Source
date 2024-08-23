@@ -1,0 +1,40 @@
+{
+    "root": {
+        "children": [
+            {
+                "id": "133501445068_0.9216069648609799",
+                "condition": [],
+                "type": "UIBitmap",
+                "name": "黑色底色",
+                "x": 0,
+                "y": 0,
+                "width": 540,
+                "height": 1080,
+                "opacity": 0.75,
+                "blend": 0,
+                "rotation": 0,
+                "show": true,
+                "mouseEventEnabledData": true,
+                "materialData": [
+                    {
+                        "materials": []
+                    }
+                ],
+                "mouseEventEnabledInEditor": true,
+                "lock": false,
+                "showOnEditor": true,
+                "hasCommand": [],
+                "isOpen": true,
+                "image": "asset/image/picture/other/Black.png",
+                "grid9": "0,0,0,0,1",
+                "flip": false,
+                "isTile": false,
+                "pivotType": 0
+            }
+        ]
+    },
+    "id": 3,
+    "instanceClassName": "",
+    "hasRootCommand": [],
+    "lock": true
+}

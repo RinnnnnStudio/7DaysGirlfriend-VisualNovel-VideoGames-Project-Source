@@ -1,0 +1,95 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 2,
+    "blockList": [
+        {
+            "name": "属性",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "125461796786_0.4882309858833862",
+                        "varName": "face",
+                        "varType": 1,
+                        "compData": {
+                            "compType": 22,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "头像",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 20,
+                    "x": 17,
+                    "width": 182,
+                    "height": 150
+                },
+                {
+                    "attr": {
+                        "id": "125462029149_0.40991646669129467",
+                        "varName": "intro",
+                        "varType": 1,
+                        "compData": {
+                            "compType": 11,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "介绍",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 20,
+                    "x": 207,
+                    "width": 510,
+                    "height": 147
+                }
+            ],
+            "blockCondition": [],
+            "blockHeight": 185,
+            "autoOrder": true,
+            "hideBlockTitle": true
+        }
+    ],
+    "singleType": true,
+    "varName": "ChatActor"
+}

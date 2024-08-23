@@ -1,0 +1,84 @@
+{
+    "attrs": {
+        "screenMode": {
+            "varType": 0,
+            "value": 1,
+            "copy": false
+        },
+        "saveFileMax": {
+            "varType": 0,
+            "value": 12,
+            "copy": false
+        },
+        "其他": {
+            "varType": 1,
+            "value": "",
+            "copy": false
+        },
+        "bornScene": {
+            "varType": 0,
+            "value": 1,
+            "copy": false
+        },
+        "dialogRecords": {
+            "varType": 9,
+            "value": [],
+            "copy": false
+        },
+        "myCG": {
+            "varType": 6,
+            "value": [],
+            "copy": false
+        },
+        "基本设置": {
+            "varType": 1,
+            "value": "",
+            "copy": false
+        },
+        "myMusic": {
+            "varType": 7,
+            "value": [],
+            "copy": false
+        },
+        "selectSE": {
+            "varType": 1,
+            "value": "asset/audio/se/menu/Select_2.ogg,1,1",
+            "copy": false,
+            "volume": "1",
+            "pitch": "1"
+        },
+        "sureSE": {
+            "varType": 1,
+            "value": "asset/audio/se/menu/Confirm_2.ogg,1,1",
+            "copy": false,
+            "volume": "1",
+            "pitch": "1"
+        },
+        "cancelSE": {
+            "varType": 1,
+            "value": "asset/audio/se/menu/Cancel_2.ogg,1,1",
+            "copy": false,
+            "volume": "1",
+            "pitch": "1"
+        },
+        "disalbeSE": {
+            "varType": 1,
+            "value": "asset/audio/se/menu/Disable_2.ogg,1,1.5",
+            "copy": false,
+            "volume": "1",
+            "pitch": "1.5"
+        },
+        "dialogSE": {
+            "varType": 1,
+            "value": ",1,1",
+            "copy": false,
+            "volume": "1",
+            "pitch": "1"
+        },
+        "对应音效": {
+            "varType": 1,
+            "value": "",
+            "copy": false
+        }
+    }
+}
